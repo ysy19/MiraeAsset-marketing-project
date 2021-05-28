@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miraeasset_tutorial_prototype</title>
+    <meta name="description" content="miraeasset_tutorial_prototype">
+    <meta property="og:type" content="website"> 
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="container">
+    
+    <article class="start">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">   
+        <div id="maintitle" class="mt-5 text-center">미래에셋증권 주식투자 Tutorial 1단계</div>
+        <img id="img" class="rounded-circle mt-5" src="img/coins.png">
+        <button type="button" class="btn-start btn-primary mt-5" onclick='start();'>투자성향 진단 테스트 시작하기</button>
+    </article>
+
+    <article class="question">
+        <div class="progress mt-5">
+            <div class="progress-bar" role="progressbar" style="width: calc(100/12*1%)"></div>
+        </div>
+        <h2 id="title" class="text-center mt-5">문제</h2>
+        <input id="type" type="hidden" value="a">
+        <input id="type" type="hidden" value="b">
+        <button id="A" type="button" class="btn mt-5">Primary</button>
+        <button id="B" type="button" class="btn  mt-5">Primary</button>
+        <button id="C" type="button" class="btn  mt-5">Primary</button>
+        <button id="D" type="button" class="btn  mt-5">Primary</button>
+        <!-- <button id="D" type="button" class="btn btn-primary mt-5" onClick="history.go(-1);">BACK</button> -->
+    </article>
+    
+    <article class="result">
+        <img id="image" class="rounded-circle mt-5" src="img/lion2.jpg" alt="characteristic">
+        <div id="characteristic" class="p-3 mt-5 text-white">투자 성향 이름</div>
+        <div id="explain"class="p-4 mb-2 mt-5 text-white">설명</div>
+        <button id="tutorial_start" type="button" class="btn btn-primary mt-5" onclick='tutorial_page();'>튜토리얼 2단계 진행하기</button>
+        <!-- <div class="share addthis_inline_share_toolbox_9tma mt-5"></div> -->
+    </article>
+
+
+
+
+
+
+
+
+    <article class="tutorial_start">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">   
+        <div id="maintitle" class="mt-5 text-center">미래에셋증권 주식투자 Tutorial 2단계</div>
+        <img id="img" class="rounded-circle mt-5" src="img/coins.png">
+        <button type="tutorial_start" class="btn-start btn-primary mt-5" onclick='tutorial_start();'>튜토리얼 시작하기</button>
+    </article>
+
+    <article class="tutorial_question">
+        <div class="progress mt-5">
+            <div class="progress-bar" role="progressbar" style="width: calc(100/12*1%)"></div>
+        </div>
+        <h2 id="t_title" class="text-center mt-5">문제</h2>
+        <div class="embed-responsive">
+            <iframe id="t_video" width="560" height="315" src="https://www.youtube.com/embed/TKYGTCFc5zg" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <h2 id="t_confirm" class="text-center mt-5">인증</h2>
+        <button id="t_next" type="button" class="btn btn-primary mt-5">다음 LEVEL 진행</button>
+    </article>
+
+    <article class="tutorial_result">
+        <div id="characteristic2" class="p-4 mb-2 mt-5 mt-5 mt-5 text-white">튜토리얼 2단계를 모두 통과하셨습니다.</div>
+        <!-- <div class="share addthis_inline_share_toolbox_9tma mt-5"></div> -->
+        <button id="tutorial_start" type="button" class="btn btn-primary mt-5" onclick='termtest_page();'>튜토리얼 3단계 진행하기</button>
+    </article>
+    
+    
+
+
+
+
+    <article class="termtest_start">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">   
+        <div id="maintitle" class="mt-5 text-center">미래에셋증권 주식투자 Tutorial 3단계</div>
+        <img id="img" class="rounded-circle mt-5" src="img/coins.png">
+        <button type="tutorial_start" class="btn-start btn-primary mt-5" onclick='termtest_start();'>튜토리얼 3단계 시작하기</button>
+    </article>
+
+    <article class="termtest_question">
+        <div class="progress mt-5">
+            <div class="progress-bar" role="progressbar" style="width: calc(100/12*1%)"></div>
+        </div>
+        <input id="type" type="hidden" value="sum_score">
+        <h2 id="tt_title" class="text-center mt-5">문제</h2>
+        <input id="type" type="hidden" value="c">
+        <button id="F" type="button" class="btn mt-5">코스피</button>
+        <button id="G" type="button" class="btn mt-5">코스닥</button>
+        <button id="H" type="button" class="btn mt-5">코넥스</button>
+        <button id="I" type="button" class="btn mt-5">K-OTC</button>
+        <button id="J" type="button" class="btn mt-5">K-OTP</button>
+        <!-- <button id="D" type="button" class="btn btn-primary mt-5" onClick="history.go(-1);">BACK</button> -->
+    </article>
+
+
+    <article class="sum_result">
+        <div id="characteristic2" class="p-3 mb-2 mt-5 text-white">모든 튜토리얼을 통과하셨습니다.</div>
+        <div id="explain" class="p-4 mb-2 mt-5 text-white">보상을 선택해주세요</div>
+        <!-- <div class="share addthis_inline_share_toolbox_9tma mt-5"></div> -->
+    </article>
+
+    <article class="sum_result1">
+        <div id="characteristic2" class="p-3 mb-2 mt-5 text-white">용어 테스트를 통과하지 못하였습니다.</div>
+        <div id="explain2" class="p-4 mb-2 mt-5 text-white">다시 시도해주세요</div>
+        <!-- <div class="share addthis_inline_share_toolbox_9tma mt-5"></div> -->
+    </article>
+
+    <!-- 카피라이트 -->
+    <article class="logo">
+        <!-- <img class="mt-5 likelion-logo" src="img/likelion-logo.png" alt="likelion-logo"> -->
+        <span class="mt-3 text-center copyright-text">Copyright 2021 COCHONSY all rights reserved</span>
+        <span class="mt-5 text-center copyright-text"></span>
+    </article>
+
+
+
+
+
+    <!-- 자바 스크립트 -->
+
+    <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+
+    <input type="hidden" id="a" value=0>
+    <input type="hidden" id="b" value=0>
+    <input type="hidden" id="c" value=0>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    
+    <script>
+        var num=1;
+        var q={
+            1:{"title":"당신에게 현재 여유자금 100만원이 생겼다. 그 돈을 어떻게 할 것인가?", "type":"a", 
+            "A":"나에게 생긴 여유 자금, 모두를 위해 사용해야지, 기부한다.", 
+            "B":"곧 쓸 일이 생길거야, 저축한다.", 
+            "C":"내 미래를 위해 차곡차곡 모아야지, 적금을 든다.",
+            "D":"요즘은 주식으로 돈도 많이 번다는데, 투자를 한다."},
+            2:{"title":"당신에게 PER, VI, 양봉, 증거금 뜻을 묻는다면?", "type":"b", 
+            "A":"전부 모른다", 
+            "B":"하나 또는 두 개 정도는 알 것 같다",
+            "C":"두 개 이상 뜻을 정확히 알고 있다",
+            "D":"대부분 정확히 알고 있다"},
+            3:{"title":"친구가 주식으로 50만원을 벌었다고 한다. 그때 나의 반응은?", "type":"a", 
+            "A":"그렇구나~", 
+            "B":"축하해!",
+            "C":"어떻게 했어?",
+            "D":"나도 해볼까?"},
+            4:{"title":"당신에게 동학개미, 박현주 회장님, m.stock, Dr.Big이 누군지 묻는다면?", "type":"b", 
+            "A":"전부 모른다", 
+            "B":"하나 또는 두 명 정도는 알 것 같다",
+            "C":"두 개 이상을 정확히 알고 있다",
+            "D":"대부분 정확히 알고 있다"}
+        }
+        var result={
+            "주생아형": {"characteristic":"주생아형","explain":"당신은 주식에 관심도 없고 주식도 잘 못하는 주린이시군요!<br> 미래에셋증권과 함께 주식에 대한 관심과 지식을 길러나가보아요~", "img":"img/lion2.jpg"},
+            "주린이형": {"characteristic":"주린이형","explain":"당신은 주식에 관심은 있지만 주식을 잘 못하는 주린이시군요!<br> 미래에셋증권과 함께 주식에 대한 지식을 길러나가보아요~", "img":"img/bear.jpg"},
+            "주딩형": {"characteristic":"주딩형","explain":"당신은 주식에 관심은 없지만 주식을 잘 알고 있는 주잘알이시군요!<br> 미래에셋증권과 함께 주식에 대한 관심을 길러나가보아요~", "img":"img/snowman.png"},
+            "주르신형": {"characteristic":"주르신형","explain":"당신은 주식에 관심도 있고 주식도 잘 알고 있는 주잘알이시군요!<br> 미래에셋증권과 함께 확실한 주식 투자 시작해보아요~", "img":"img/unicorn.png"}
+        }
+        function start() {
+            $(".start").hide();
+            $(".question").show();
+            next();
+        }
+        var score=0;
+        $("#A").click(function(){
+            var type = $("#type").val();
+            var preValue=$("#"+type).val();
+            score=0;
+            $("#"+type).val(parseInt(preValue)+parseFloat(score));
+            next();
+        });
+
+        $("#B").click(function(){
+            var type = $("#type").val();
+            var preValue=$("#"+type).val();
+            score=1;
+            $("#"+type).val(parseInt(preValue)+parseFloat(score));
+            next();
+        });
+
+        $("#C").click(function(){
+            var type = $("#type").val();
+            var preValue=$("#"+type).val();
+            score=2;
+            $("#"+type).val(parseInt(preValue)+parseFloat(score));
+            next();
+        });
+
+        $("#D").click(function(){
+            var type = $("#type").val();
+            var preValue=$("#"+type).val();
+            score=3;
+            $("#"+type).val(parseInt(preValue)+parseFloat(score));
+            next();
+        });
+
+       
+        function next(){
+            if(num==5){
+                $(".question").hide();
+                var sum="";
+                
+                if($("#a").val()==0||$("#a").val()==1||$("#a").val()==2||$("#a").val()==3){
+                    if($("#b").val()==0||$("#b").val()==1||$("#b").val()==2||$("#b").val()==3){
+                        sum="주생아형";
+                    }
+                }
+                if($("#a").val()==0||$("#a").val()==1||$("#a").val()==2||$("#a").val()==3){
+                    if($("#b").val()==4||$("#b").val()==5||$("#b").val()==6){
+                        sum="주린이형";
+                    }
+                }
+                if($("#a").val()==4||$("#a").val()==5||$("#a").val()==6){
+                    if($("#b").val()==0||$("#b").val()==1||$("#b").val()==2||$("#b").val()==3){
+                        sum="주딩형";
+                    }
+                }
+                if($("#a").val()==4||$("#a").val()==5||$("#a").val()==6){
+                    if($("#b").val()==4||$("#b").val()==5||$("#b").val()==6){
+                        sum="주르신형";
+                    }
+                }
+                $(".result").show();
+                $("#image").attr('src',result[sum]["img"]);
+                $("#characteristic").html(result[sum]["characteristic"]);
+                $("#explain").html(result[sum]["explain"]);
+            }
+            else{
+            $(".progress-bar").attr('style','width: calc(100/4*'+num+'%)');
+            $("#title").html(q[num]["title"]);
+            $("#type").val(q[num]["type"]);
+            $("#A").html(q[num]["A"]);
+            $("#B").html(q[num]["B"]);
+            $("#C").html(q[num]["C"]);
+            $("#D").html(q[num]["D"]);            
+            num++;
+            }
+        }
+        // tutorial jquery
+        var t_num=1;
+        var t_q={
+            1:{"title":"비대면 계좌개설 방법", "video":"https://www.youtube.com/embed/TKYGTCFc5zg", "confirm":"인증하기"},
+            2:{"title":"시장분석 방법", "video":"https://www.youtube.com/embed/xRsCFmcfxSk", "confirm":"인증하기"},
+            3:{"title":"기업분석 방법", "video":"https://www.youtube.com/embed/KKTwrZcNDGw", "confirm":"인증하기"},
+            4:{"title":"차트분석 방법", "video":"https://www.youtube.com/embed/Wy1V4VUYSW0", "confirm":"인증하기"},
+            5:{"title":"매수 방법", "video":"https://www.youtube.com/embed/VD7jsl9CBVU", "confirm":"인증하기"},
+            6:{"title":"매도 방법", "video":"https://www.youtube.com/embed/VD7jsl9CBVU", "confirm":"인증하기"}
+
+        }
+        function tutorial_page(){
+            $(".result").hide();
+            $(".tutorial_start").show();
+        }
+        function tutorial_start() {
+            $(".tutorial_start").hide();
+            $(".tutorial_question").show();
+            tutorial_next();
+        }
+        
+        $("#t_next").click(function(){
+            tutorial_next();
+        });
+
+        function tutorial_next(){
+            if(t_num==7){
+                $(".tutorial_question").hide();
+                $(".tutorial_result").show();    
+            }
+            else{
+                $(".progress-bar").attr('style','width: calc(100/6*'+t_num+'%)');
+                $("#t_video").attr('src',t_q[t_num]["video"]);
+                $("#t_title").html(t_q[t_num]["title"]);
+                $("#t_confirm").html(t_q[t_num]["confirm"]);
+                t_num++;
+            }
+        }
+
+
+        //tertest jquery
+        var tt_num=1;
+        var tt_q={
+            1:{"title":"국내 주식 시장이 아닌 것은 무엇인가요?", "type":"c", 
+            "F":"코스피", 
+            "G":"코스닥", 
+            "H":"코넥스",
+            "I":"K-OTC",
+            "J":"K-OTP"},
+            2:{"title":"일종의 과열 완화 장치로, 과열된 시장을 진정시키고 시장인 안정 될 수 있도록 도와주는 장치는 무엇인가요?", "type":"c", 
+            "F":"PER", 
+            "G":"증거금", 
+            "H":"VI발동",
+            "I":"서킷브레이커",
+            "J":"사이드카"},
+            3:{"title":"기업의 재무상태와 경영성과를 회계기준에 따라 보여주는 보고서의 묶을을 지칭하는 것은 무엇일까요?", "type":"c", 
+            "F":"재무제표", 
+            "G":"재무상태표", 
+            "H":"포괄손익계산서",
+            "I":"현금흐름표",
+            "J":"자본 변동표"},
+            4:{"title":"시초가를 기준으로, 상승 그래프를 그리고 있는 상태를 뭐라고 하나요?", "type":"c", 
+            "F":"양봉", 
+            "G":"음봉", 
+            "H":"일봉",
+            "I":"주봉",
+            "J":"월봉"},
+            5:{"title":"일정기간 동안의 주가를 산술 평균한 값인 주가이동평균을 차례로 연결해 만든 선은 무엇일까요?", "type":"c", 
+            "F":"일동평균선", 
+            "G":"이동평균선", 
+            "H":"삼동평균선",
+            "I":"사동평균선",
+            "J":"오동평균선"},
+        }
+        var tt_score=0;
+        $("#F").click(function(){
+            var preValue=$("#c").val();
+            if(tt_num==4||num==5){tt_score=1;}
+            else{tt_score=0;}
+            $("#c").val(parseInt(preValue)+parseFloat(tt_score));
+            termtest_next();
+        });
+        $("#G").click(function(){
+            var preValue=$("#c").val();
+            if(tt_num==6){tt_score=1;}
+            else{tt_score=0;}
+            $("#c").val(parseInt(preValue)+parseFloat(tt_score));
+            termtest_next();
+        });
+        $("#H").click(function(){
+            var preValue=$("#c").val();
+            if(tt_num==3){tt_score=1;}
+            else{tt_score=0;}
+            $("#c").val(parseInt(preValue)+parseFloat(tt_score));
+            termtest_next();
+        });
+        $("#I").click(function(){
+            termtest_next();
+        });
+        $("#J").click(function(){
+            var preValue=$("#c").val();
+            if(tt_num==2){tt_score=1;}
+            else{tt_score=0;}
+            $("#c").val(parseInt(preValue)+parseFloat(tt_score));
+            termtest_next();
+        });
+
+        function termtest_page(){
+            $(".tutorial_result").hide();
+            $(".termtest_start").show();
+        }
+        function termtest_start() {
+            $(".termtest_start").hide();
+            $(".termtest_question").show();
+            termtest_next();
+        }
+
+        function termtest_next(){
+            if(tt_num==6){
+                $(".termtest_question").hide();
+                
+                if($("#c").val()>2){ 
+                    $(".sum_result").show();
+                }
+                else{ 
+                    $(".sum_result1").show();
+                }
+            }
+            else{
+            $(".progress-bar").attr('style','width: calc(100/5*'+tt_num+'%)');
+            $("#tt_title").html(tt_q[tt_num]["title"]);
+            $("#F").html(tt_q[tt_num]["F"]);
+            $("#G").html(tt_q[tt_num]["G"]);
+            $("#H").html(tt_q[tt_num]["H"]);
+            $("#I").html(tt_q[tt_num]["I"]);            
+            $("#J").html(tt_q[tt_num]["J"]);    
+            tt_num++;
+            }
+        }
+    </script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-605b069a235349d6"></script>
+</body>
+</html>
