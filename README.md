@@ -1,5 +1,5 @@
 # MiraeAsset-marketing-project
 MiraeAsset marketing project
-Level 1 : Testing propensity to stock 
-Level 2 : Learning how to invest 
-Level 3 : Solving stock quiz
+\nLevel 1 : Testing propensity to stock 
+\nLevel 2 : Learning how to invest 
+\nLevel 3 : Solving stock quiz
